@@ -4,8 +4,12 @@
 console.log("*********** GLOBAL SCOPE ***********");
 
 function globalScope() {
-  var x = 1000; // initialization
-  let y = 100;
+  // var x = 1000; // initialization
+  // let y = 100; // initialization
+  var x; // declaration
+  x = 1000; //rendering
+  let y; // declaration
+  y = 100; //rendering
 
   console.log(x); // 1000
   console.log(y); // 100
@@ -21,7 +25,7 @@ function globalScope() {
     console.log(z); // 1010
   }
   console.log(x); // 10
-  console.log(y); // 100
+  console.log(y); // 1
   // console.log(z); // Not Allowed
 }
 // Calling Function
