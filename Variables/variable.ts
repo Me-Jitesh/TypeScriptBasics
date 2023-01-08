@@ -100,3 +100,27 @@ function hoisting() {
 }
 // Calling Function
 hoisting();
+
+console.log("*********** GLOBAL VARIABLE ***********");
+
+var a;
+let b;
+// const z; // Not allowed
+const c = 70;
+function globalVariableFun1() {
+  a = 50;
+  b = 60;
+  console.log(a); // 50
+  console.log(b); // 60
+  console.log(c); // 70
+}
+globalVariableFun1();
+
+function globalVariableFun2() {
+  a = 500;
+  b = 600;
+  console.log(a); // 500
+  console.log(b); // 600
+  console.log(c); // 70
+}
+globalVariableFun2();
