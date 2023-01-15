@@ -1,3 +1,5 @@
+"use strict"; // Enable Strict Mode
+
 var x = 10; // old way and have scoping problem
 let y = "Hello"; // Recommended
 const c = 100; // declare constant
