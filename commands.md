@@ -1,2 +1,5 @@
+- npm install -g typescript - Install Typescript
+- npm i typescript - Install Typescript
 - node filename.js
-- node filename.ts
+- node filename.ts - Compile and Run but does not generate .js file
+- tsc filename.ts - Compile Typescript into Javascript and generate .js file
