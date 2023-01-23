@@ -16,3 +16,16 @@ console.log(str.charCodeAt(1)); //49 ASCII Value
 console.log(str.indexOf("cr")); //11
 console.log(str.indexOf("cr7")); // -1 if not exist
 console.log(str.lastIndexOf("y")); //18, -1 for Capital Y
+
+console.log("************* Substring ************");
+
+console.log(str.length);
+console.log(str.substring(0)); //0123456789 crAzy Typescript
+console.log(str.substring(0, 9)); //012345678 , last index excluded
+console.log(str.substring(15, 7)); //789 crAz , it swaps the agument if start > end
+console.log(str.substring(0, 30)); // 0123456789 crAzy Typescript , replace end index with length
+console.log(str.substring(0, -25)); // print nothing  , replace end index with 0
+console.log(str.substring(0, NaN)); // print nothing  , replace end index with 0
+console.log(str.substring(9, 9)); // print nothing
+console.log(str.substring(28)); // print nothing
+console.log(str.substring(27, 30)); // print nothing
