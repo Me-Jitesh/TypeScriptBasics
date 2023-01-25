@@ -34,3 +34,21 @@ console.log(str.substring(10, NaN)); // 0123456789  , replace NaN index with 0 a
 console.log(str.substring(9, 9)); // print nothing
 console.log(str.substring(28)); // print nothing
 console.log(str.substring(27, 30)); // print nothing
+
+console.log("************* SubStr ************");
+
+console.log(str.length); //27
+console.log(str.substr(0)); //0123456789 crAzy Typescript
+console.log(str.substr(0, 9)); //012345678 , last index excluded
+console.log(str.substr(15, 7)); // y Types , (start,how many chars)
+console.log(str.substr(0, 30)); // 0123456789 crAzy Typescript , replace end index with length
+console.log(str.substr(0, -25)); // print nothing
+console.log(str.substr(5, -25)); // print nothing
+console.log(str.substr(-15, 10)); // rAzy Types
+console.log(str.substr(0, NaN)); // print nothing  , replace NaN index with 0
+console.log(str.substr(NaN, NaN)); // print nothing  , replace NaN index with 0
+console.log(str.substr(NaN, 10)); // 0123456789  , replace NaN index with 0
+console.log(str.substr(10, NaN)); // print nothing  , replace NaN index with 0
+console.log(str.substr(9, 9)); // 9 crAzy T  (start,how many chars)
+console.log(str.substr(28)); // print nothing
+console.log(str.substr(27, 30)); // print nothing
