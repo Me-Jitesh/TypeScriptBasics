@@ -52,3 +52,21 @@ console.log(str.substr(10, NaN)); // print nothing  , replace NaN index with 0
 console.log(str.substr(9, 9)); // 9 crAzy T  (start,how many chars)
 console.log(str.substr(28)); // print nothing
 console.log(str.substr(27, 30)); // print nothing
+
+console.log("************* Slice Function ************");
+
+console.log(str.length); //27
+console.log(str.slice(0)); //0123456789 crAzy Typescript
+console.log(str.slice(0, 9)); //012345678 , last index excluded
+console.log(str.slice(15, 7)); // print nothing ,  Circular not allowed
+console.log(str.slice(0, 30)); // 0123456789 crAzy Typescript , replace end index with length
+console.log(str.slice(0, -25)); // 01
+console.log(str.slice(5, -25)); // print nothing
+console.log(str.slice(-15, 10)); // print nothing
+console.log(str.slice(0, NaN)); // print nothing
+console.log(str.slice(NaN, NaN)); // print nothing
+console.log(str.slice(NaN, 10)); // 0123456789
+console.log(str.slice(10, NaN)); // print nothing
+console.log(str.slice(9, 9)); // print nothing
+console.log(str.slice(28)); // print nothing
+console.log(str.slice(27, 30)); // print nothing
