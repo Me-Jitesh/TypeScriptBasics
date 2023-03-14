@@ -2,3 +2,4 @@
 - npm i typescript - Install Typescript
 - node filename.js - Run js file
 - tsc filename.ts - Compile Typescript into Javascript and generate .js file
+- npm init -y - Initialize Project Structure
